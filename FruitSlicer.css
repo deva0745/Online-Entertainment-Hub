@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,700;1,700&display=swap');
+
+html {
+  background-image: url(https://raw.githubusercontent.com/Saumya-07/Fruit-Slicer/master/images/bg3%20-%20Copy.jpg);
+  height: 100%;
+  background-size: cover;
+}
+
+#container {
+  width: 750px;
+  height: 600px;
+  margin: 60px auto;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  font-family: cursive, sans-serif;
+}
+
+#front {
+  font-size: 40px;
+  color: #d3901d;
+  width: 650px;
+  height: 450px;
+  padding: 10px;
+  margin: 30px auto 20px auto;
+  z-index: 2;
+  display: none;
+}
+
+#front img {
+  width: 280px;
+}
+
+#instructions {
+  width: 450px;
+  height: 50px;
+  margin: 10px auto;
+  font-size: 30px;
+
+  background-color: #d3901d;
+  color: #2e1d11;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 0px 0px #775012;
+}
+
+#fruitcontainer {
+  background: url(https://raw.githubusercontent.com/Saumya-07/Fruit-Slicer/master/images/wood-bg2.jpg);
+  background-size: cover;
+  width: 650px;
+  height: 450px;
+  padding: 10px;
+  margin: 30px auto 20px auto;
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-family: cursive, sans-serif;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0px 4px 0px 0px #4b4b4e;
+  position: relative;
+}
+
+.fruit {
+  display: none;
+  position: absolute;
+}
+
+#score {
+  display: none;
+}
+
+.scoreDisplay {
+  z-index: 1;
+  display: flex;
+  background-color: transparent;
+  color: #888e61;
+  position: absolute;
+  font-size: 30px;
+  justify-items: center;
+}
+
+#score img {
+  width: 40px;
+  align-items: center;
+  padding-right: 5px;
+}
+
+#trialsleft {
+  margin-top: 7px;
+  display: flex;
+  position: absolute;
+  left: 550px;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.life {
+  width: 30px;
+  padding-right: 5px;
+}
+
+#startReset {
+  position: relative;
+  width: 90px;
+  padding: 10px;
+  margin: 0 auto;
+
+  cursor: pointer;
+  text-align: center;
+  background-color: #8d8315;
+  box-shadow: 0px 4px 0px 0px #5c5619;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+
+#startReset:active {
+  background-color: #69620c;
+  box-shadow: 0px 0px #5c5619;
+  top: 4px;
+  color: white;
+}
+
+#gameOver {
+  box-sizing: border-box;
+  width: 500px;
+  height: 300px;
+  background: transparent;
+  color: #d3901d;
+  text-transform: upperCase;
+  text-align: center;
+  font-size: 3em;
+  position: absolute;
+  top: 170px;
+  left: 150px;
+  z-index: 2;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+
+:root {
+  --green: #00E77F;
+  --white: #fff;
+  --light-white: #aaa;
+  --black: #3d3d3d;
+  --light-bg: #4b4b4b;
+}
+
+* {
+  font-family: 'Rubik', sans-serif;
+  font-weight: bolder;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+}
+
+*::selection {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+}
+
+::-webkit-scrollbar {
+  height: .5rem;
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--green);
+  border-radius: 5rem;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.heading {
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-size: 4rem;
+  font-family: 'Rubik', sans-serif;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.heading span {
+  color: var(--green);
+  text-transform: uppercase;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--light-bg);
+}
+
+.header .flex {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.header .flex .logo {
+  font-size: 2.5rem;
+  color: var(--white);
+  text-transform: none;
+}
+
+.header .flex .logo span {
+  color: orange;
+  text-transform: none;
+}
+
+.header .flex .navbar a {
+  margin-left: 2rem;
+  color: var(--light-white);
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  padding: 0 50px 0 0;
+}
+
+.header .flex .navbar a:hover {
+  color: var(--green);
+}
+
+
+#menu-btn {
+  cursor: pointor;
+  color: var(--white);
+  font-size: 2.5rem;
+  display: none;
+}
+
+

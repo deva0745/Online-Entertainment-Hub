@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,700;1,700&display=swap');
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    height: 560px;
+    width: 573px;
+    margin-top: 50px;
+    background-color: rgba(109, 127, 151, 0.5);
+    padding: 5px;
+    color: #85796b;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #fff;
+}
+
+.grid div {
+    height: 70px;
+    width: 70px;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    margin-top: -10px;
+}
+
+.invisible {
+    background-color: white;
+}
+
+body {
+    background-image: url('https://raw.githubusercontent.com/arpit456jain/Amazing-Js-Projects/master/Candy%20Crush/utils/bg.png');
+}
+
+.scoreBoard {
+    background-color: cyan;
+    border-radius: 20px;
+    margin: 100px auto;
+    width: auto;
+    height: 120px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: #85796b;
+}
+
+
+:root {
+    --green: #00E77F;
+    --white: #fff;
+    --light-white: #aaa;
+    --black: #3d3d3d;
+    --light-bg: #4b4b4b;
+}
+
+* {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+    text-transform: capitalize;
+}
+
+*::selection {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+}
+
+::-webkit-scrollbar {
+    height: .5rem;
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--green);
+    border-radius: 5rem;
+}
+
+body {
+    background-color: var(--black);
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background-color: var(--light-bg);
+    cursor: pointer;
+    color: var(--white);
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+}
+
+.btn:hover{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.heading{
+    margin-bottom: 2.5rem;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Rubik', sans-serif;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.heading span{
+    color: var(--green);
+    text-transform: uppercase;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--light-bg);
+}
+
+.header .flex {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header .flex .logo {
+    font-size: 2.5rem;
+    color: var(--white);
+    text-transform: none;
+}
+
+.header .flex .logo span{
+    color: orange;
+    text-transform: none;
+}
+
+.header .flex .navbar a {
+    margin-left: 2rem;
+    color: var(--light-white);
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 800;
+    padding: 0 50px 0 0;
+}
+
+.header .flex .navbar a:hover {
+    color: var(--green);
+}
+
+#menu-btn {
+    cursor: pointor;
+    color: var(--white);
+    font-size: 2.5rem;
+    display: none;
+}
+
+
+
+.main{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

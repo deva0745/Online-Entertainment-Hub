@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says Game</title>
+    <link rel="stylesheet" href="simonSays.css">
+</head>
+<body>
+
+    <header class="header">
+        <section class="flex">
+            <a href="#home" class="logo">get<span>Entertain.</span></a>
+    
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+    
+                <a href="#" id="randomThingsLink">Random Things</a>
+                <a href="#" id="gamesLink">Play Games</a>
+    
+            </nav>
+    
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </section>
+    </header>
+    
+
+    <h1>Simon Says Game</h1>
+    <h2>Press any key to start the game</h2>
+    <div class="btn-container">
+        <div class="line-1">
+            <div class="btn yellow" type="button"  id="yellow"></div>
+            <div class="btn red" type="button" id="red"></div>
+        </div>
+        <div class="line-2">
+            <div class="btn purple" type="button" id="purple"></div>
+            <div class="btn green" type="button" id="green"></div>
+        </div>
+    </div>
+    <div class="max-score"></div>
+
+    <script src="scripts.js"></script>
+    <script src="simonSays.js"></script>
+</body>
+</html>
